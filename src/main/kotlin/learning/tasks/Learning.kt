@@ -37,12 +37,12 @@ fun reifiedExample(views: List<View>) {
 inline fun <reified T : View> Iterable<View>.countViewOfType(): Int = this.count { it is T }
 
 fun runInFix() {
-    for (i in 0..8) println(2.0 pow i)
+    for (i in 0..10) println(2.0 pow i)
 }
 
 infix fun <T : Number> T.pow(power: Int): Double {
     val value = this.toDouble()
-    var result = value
+    var result = 1.0
     for (i in 1..power) result *= value
     return result
 }
