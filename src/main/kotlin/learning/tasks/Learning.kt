@@ -92,7 +92,7 @@ fun views() {
 }
 
 fun setAllViewsGone(vararg views: View) {
-    views.map { it.apply { visibility = Visibility.GONE } }
+    views.forEach { it.apply { visibility = Visibility.GONE } }
 }
 
 fun printViews(views: Iterable<View>) {
@@ -123,5 +123,5 @@ fun usersWithPets() {
         phone = "+4439103023"
     }
 
-    users.map { user -> user.pet?.let { pet -> callPet(pet) } }
+    users.forEach { user -> user.pet?.let { pet -> pet.name?.run { callPet(pet) }} }
 }

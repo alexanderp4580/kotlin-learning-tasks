@@ -15,7 +15,8 @@ Do primitives are available for user in Kotlin?
 -------
 Only classes are available for users, `Int`, `String` etc. During runtime they can be represented by primitives.
 
-**Difference between val and var?
+Difference between val and var?
+-------
 
 val cannot be changed - immutable.
 var is a standard variable.
