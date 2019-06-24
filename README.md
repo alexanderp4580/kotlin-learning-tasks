@@ -1,4 +1,4 @@
-# Kotlin Questions
+# Kotlin Questions and Tasks
 
 Difference between apply, run, also and let?
 -------
